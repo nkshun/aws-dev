@@ -3,7 +3,7 @@ version: 0.2 # 0.2 の使用が推奨されている
 phases:
   install:
     runtime-versions:
-      nodejs: 14
+      nodejs: 12
     commands:
       - npm i
   build:
