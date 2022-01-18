@@ -1,0 +1,25 @@
+version: 0.2 # 0.2 の使用が推奨されている
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm i
+  build:
+    commands:
+      - echo Building the Node code...
+      - pwd
+      - echo ls
+      - ls
+      - npm run build
+artifacts:
+  secondary-artifacts:
+    nodejs_artifacts:
+      base-directory: /
+      files:
+        - dist/**/*
+        # - rules/**/*
+        # - config/**/*
+        - appspec.yml
+        - package.json
