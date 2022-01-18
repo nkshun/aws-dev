@@ -14,12 +14,9 @@ phases:
       - ls
       - npm run build
 artifacts:
-  secondary-artifacts:
-    nodejs_artifacts:
-      base-directory: /
-      files:
-        - dist/**/*
-        # - rules/**/*
-        # - config/**/*
-        - appspec.yml
-        - package.json
+    files:
+      - dist/**/*
+      # - rules/**/*
+      # - config/**/*
+      - appspec.yml
+      - package.json
