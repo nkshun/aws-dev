@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - echo Building the Node code...
+      - echo pwd
       - pwd
       - echo ls
       - ls
@@ -16,6 +17,7 @@ phases:
 artifacts:
     files:
       - dist/**/*
+      - scripts/**/*
       # - rules/**/*
       # - config/**/*
       - appspec.yml
