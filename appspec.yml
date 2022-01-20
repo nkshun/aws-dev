@@ -11,6 +11,10 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
+  ApplicationStart:
+    - location: scripts/application_start
+      timeout: 30
+      runas: user1
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
