@@ -1,21 +1,19 @@
+# CodeDeploy用の設定ファイル
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: scripts/application_start
-      timeout: 30
-      runas: root
+  - source: / # deploy対象
+    destination: /home/ec2-user/ # deploy先のEC2のパス
+hooks: # 同期的にscriptを実行
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/install_node_modules
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_server
+      timeout: 30
       runas: root
