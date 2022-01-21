@@ -1,2 +1,3 @@
 #!/bin/bash
-service httpd start
+cd comomon-api-server-ts
+pm2 start bin/www.js

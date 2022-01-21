@@ -1,5 +1,5 @@
 #!/bin/bash
-isExistApp=`pgrep httpd`
+isExistApp=`pgrep pm2`
 if [[ -n  $isExistApp ]]; then
-    service httpd stop
+    pm2 kill
 fi
