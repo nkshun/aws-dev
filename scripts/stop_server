@@ -1,5 +1,4 @@
 #!/bin/bash
-isExistApp=`pgrep pm2`
-if [[ -n  $isExistApp ]]; then
-    pm2 kill
-fi
+sudo su ec2-user
+cd /home/ec2-user
+pm2 stop www || true

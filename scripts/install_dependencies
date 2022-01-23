@@ -1,2 +1,4 @@
 #!/bin/bash
-npm i pm2 -g
+sudo su ec2-user
+cd /home/ec2-user
+npm i
