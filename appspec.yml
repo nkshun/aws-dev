@@ -9,10 +9,6 @@ hooks: # 同期的にscriptを実行
     - location: scripts/stop_server
       timeout: 300
       runas: ec2-user
-  AfterInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: ec2-user
   ApplicationStart:
     - location: scripts/start_server
       timeout: 30
