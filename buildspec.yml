@@ -14,7 +14,6 @@ artifacts:
     files:
       - dist/**/*
       - scripts/**/*
-      - node_modules/**/*
       # - rules/**/*
       # - config/**/*
       - appspec.yml

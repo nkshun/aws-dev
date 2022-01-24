@@ -9,8 +9,12 @@ permissions:
     owner: ec2-user
     mode: 744
 hooks: # 同期的にscriptを実行
-  ApplicationStop: # 初回のみ実行されない
+  ApplicationStop: # 初回は実行されない
     - location: scripts/stop_server
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: scripts/install_dependencies
       timeout: 300
       runas: ec2-user
   ApplicationStart:
