@@ -5,7 +5,7 @@ files:
   - source: / # deploy対象
     destination: /home/ec2-user/ # deploy先のEC2のパス
 permissions:
-  - object: /
+  - object: /home/ec2-user/
     owner: ec2-user
     mode: 744
 hooks: # 同期的にscriptを実行
