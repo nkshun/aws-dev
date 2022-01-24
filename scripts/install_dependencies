@@ -1,27 +1,8 @@
 #!/bin/bash
-cd /home/ec2-user
-
-echo "==="
-which nvm
-echo "==="
-which node
-echo "==="
-which npm
-echo "==="
-which pm2
-echo "==="
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-echo "==="
-which nvm
-echo "==="
-which node
-echo "==="
-which npm
-echo "==="
-which pm2
-echo "==="
+cd /home/ec2-user
 npm i
