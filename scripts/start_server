@@ -1,2 +1,26 @@
 #!/bin/bash
+echo "==="
+which nvm
+echo "==="
+which node
+echo "==="
+which npm
+echo "==="
+which pm2
+echo "==="
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+echo "==="
+which nvm
+echo "==="
+which node
+echo "==="
+which npm
+echo "==="
+which pm2
+echo "==="
+
 pm2 start bin/www -n www -i 0
