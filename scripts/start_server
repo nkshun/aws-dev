@@ -1,2 +1,2 @@
 #!/bin/bash
-pm2 start bin/www -n www -i 0
+sudo pm2 start bin/www -n www -i 0
