@@ -4,4 +4,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 cd /home/ec2-user
-pm2 stop www || true
+pm2 stop dist/index.js || true
