@@ -4,6 +4,10 @@ os: linux
 files:
   - source: / # deploy対象
     destination: /home/ec2-user/ # deploy先のEC2のパス
+permissions:
+  - object: /
+    owner: ec2-user
+    mode: 744
 hooks: # 同期的にscriptを実行
   ApplicationStop: # 初回のみ実行されない
     - location: scripts/stop_server
