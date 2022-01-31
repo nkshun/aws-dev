@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyPaeser.urlencoded({extended: true}));
 app.use(bodyPaeser.json());
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 52666;
 
 app.use('/', router);
 
