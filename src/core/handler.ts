@@ -2,7 +2,12 @@ import { Request, Response } from "express";
 import {ErrorCode, SuccessCode} from '../constants/error';
 
 export class Handler {
-    constructor(private req: Request, private res: Response) {};
+    public request: Request
+    public response: Response
+    constructor(private req: Request, private res: Response) {
+        this.request = req
+        this.response = res
+    };
 
     /**
      * データの送信
