@@ -8,4 +8,4 @@ pwd
 ls -a
 
 cd /home/ec2-user
-pm2 start dist/index.js
+pm2 start dist/bin/www.js

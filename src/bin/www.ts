@@ -3,7 +3,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import bodyPaeser from 'body-parser';
 
-import router from './routes/index';
+import router from '../routes/index';
 
 const app = express();
 
