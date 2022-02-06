@@ -7,4 +7,4 @@ echo "cd /home/ec2-user/comomon-api-server/"
 cd /home/ec2-user/comomon-api-server/
 
 echo "pm2 stop dist/bin/www || true"
-pm2 stop dist/bin/www || true
+pm2 stop dist/bin/www.js || true
