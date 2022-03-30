@@ -4,8 +4,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-echo "cd /home/ec2-user/comomon-api-server/"
-cd /home/ec2-user/comomon-api-server/
+echo "cd /home/ec2-user/aws-dev/"
+cd /home/ec2-user/aws-dev/
 
 echo "npm i"
 npm i
