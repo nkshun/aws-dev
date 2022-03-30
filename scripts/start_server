@@ -10,8 +10,8 @@ pwd
 echo "ls -a"
 ls -a
 
-echo "cd /home/ec2-user/comomon-api-server/"
-cd /home/ec2-user/comomon-api-server/
+echo "cd /home/ec2-user/aws-dev/"
+cd /home/ec2-user/aws-dev/
 
 echo "pm2 start dist/bin/www"
 pm2 start dist/bin/www.js
